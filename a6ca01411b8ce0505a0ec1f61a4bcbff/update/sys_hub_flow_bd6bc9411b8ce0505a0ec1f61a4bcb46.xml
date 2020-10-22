@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>cca3afb61b6058101d177669cc4bcbb8</copied_from>
+        <copied_from_name>Look up Record</copied_from_name>
+        <description/>
+        <internal_name>look_up_record</internal_name>
+        <label_cache>[{"name":"13354e20-fb9e-4d2c-9328-f25a9e1302ac.Record.next_execution_timestamp","label":"1➛Get Record Details Last Modified Date Record➛Next Execution Timestamp","reference":"","reference_display":"Next Execution Timestamp","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sn_bmcremedy_spoke_get_record_details_last_modified_date","column_name":"next_execution_timestamp"},{"name":"fec91993-3e5e-4fc4-81fc-23178e094a1b.table_name","label":"8➛Get Record Details Last Modified Date Table","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fec91993-3e5e-4fc4-81fc-23178e094a1b.record","label":"8➛Get Record Details Last Modified Date Record","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"13354e20-fb9e-4d2c-9328-f25a9e1302ac.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"13354e20-fb9e-4d2c-9328-f25a9e1302ac.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"13354e20-fb9e-4d2c-9328-f25a9e1302ac.Table","label":"1➛Get Record Details Last Modified Date Table","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"13354e20-fb9e-4d2c-9328-f25a9e1302ac.Record","label":"1➛Get Record Details Last Modified Date Record","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5503ea56-0e89-49ee-904d-eca5a25224ed.error_message","label":"2.1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5503ea56-0e89-49ee-904d-eca5a25224ed.status","label":"2.1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5503ea56-0e89-49ee-904d-eca5a25224ed.table_name","label":"2.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5503ea56-0e89-49ee-904d-eca5a25224ed.record","label":"2.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8f4b28f-2693-4995-bfb8-e7509db64725.table_name","label":"2.2➛Get Record Details Table","reference":"sn_bmcremedy_spoke_get_record_details","reference_display":"Get Record Details","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f8f4b28f-2693-4995-bfb8-e7509db64725.record","label":"2.2➛Get Record Details Record","reference":"sn_bmcremedy_spoke_get_record_details","reference_display":"Get Record Details","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"31dce7d0-092c-45ec-8874-01bbf1916493.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"37b1fb2a-b011-4fba-aaf1-5a7b400fe70f"}},{"name":"31dce7d0-092c-45ec-8874-01bbf1916493.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9c1f6f25-fcfb-42d2-b08f-bf45dc0f343a"}},{"name":"31dce7d0-092c-45ec-8874-01bbf1916493.record","label":"1➛Record","reference_display":"Record","type":"array.object","base_type":"array.object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"853ba3d2-452d-499c-aa6a-aa7a0949276f","child_type":"object","child_type_label":"Object","child_name":"record.Record_child0","child_label":"Record_child0"}},{"name":"8a3b0cc4-26c1-4b25-9be0-b8126065de32.item","label":"2.1➛Record_child0","reference_display":"Record_child0","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"d3f54118-d70b-4f1e-bd3a-011fa104a092.record","label":"2.1.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d3f54118-d70b-4f1e-bd3a-011fa104a092.table_name","label":"2.1.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85c02e32-0d3d-4e9d-90ab-a49f3619019e.record","label":"2.2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85c02e32-0d3d-4e9d-90ab-a49f3619019e.table_name","label":"2.2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"58595e5d-f2c2-41b9-8521-2f55c55a0b73.record","label":"2.2➛sn_bmcremedy_spoke_get_record_details Record","reference":"sn_bmcremedy_spoke_get_record_details","reference_display":"Get Record Details","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"58595e5d-f2c2-41b9-8521-2f55c55a0b73.table_name","label":"2.2➛sn_bmcremedy_spoke_get_record_details Table","reference":"sn_bmcremedy_spoke_get_record_details","reference_display":"Get Record Details","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item","label":"4➛Record","reference_display":"Record","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"4e97e003-1032-469a-9f42-86cad5af3218.record","label":"2.1.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4e97e003-1032-469a-9f42-86cad5af3218.table_name","label":"2.1.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3c3491b7-564f-45c0-b30a-f9997493b2ca.record","label":"2.1.1➛Get Record Details Record","reference":"sn_bmcremedy_spoke_get_record_details","reference_display":"Get Record Details","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3c3491b7-564f-45c0-b30a-f9997493b2ca.table_name","label":"2.1.1➛Get Record Details Table","reference":"sn_bmcremedy_spoke_get_record_details","reference_display":"Get Record Details","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Request_ID","label":"3.1➛Record_child0➛Request ID","type":"string","base_type":"string"},{"name":"95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Incident_Number","label":"3.1➛Record_child0➛Incident Number","type":"string","base_type":"string"},{"name":"95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Status","label":"3.1➛Record_child0➛Status","type":"string","base_type":"string"},{"name":"95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Submitter","label":"3.1➛Record_child0➛Submitter","type":"string","base_type":"string"},{"name":"c45681bc-ddbd-4996-bb8b-30f3e19f38e1.record","label":"3➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"c45681bc-ddbd-4996-bb8b-30f3e19f38e1.table_name","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"c45681bc-ddbd-4996-bb8b-30f3e19f38e1.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"c45681bc-ddbd-4996-bb8b-30f3e19f38e1.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"1c575897-69d0-4cf0-9d35-417e21cd67d2.record","label":"2.2➛Get Record Details Last Modified Date Record","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1c575897-69d0-4cf0-9d35-417e21cd67d2.table_name","label":"2.2➛Get Record Details Last Modified Date Table","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1c575897-69d0-4cf0-9d35-417e21cd67d2.status","label":"2.2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1c575897-69d0-4cf0-9d35-417e21cd67d2.error_message","label":"2.2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ff84dee-ee3f-4f24-a881-f1f5046573ec.record","label":"4.1➛Get Record Details Last Modified Date Record","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ff84dee-ee3f-4f24-a881-f1f5046573ec.table_name","label":"4.1➛Get Record Details Last Modified Date Table","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ff84dee-ee3f-4f24-a881-f1f5046573ec.status","label":"4.1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ff84dee-ee3f-4f24-a881-f1f5046573ec.error_message","label":"4.1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5b7f9826-c5d6-4e74-a0c9-f84bf0b51bdb.approval_state","label":"2.1.1➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"38645159-2cde-4e1e-b37c-e69dc11bcdb6.record","label":"5➛Get Record Details Record","reference":"sn_bmcremedy_spoke_get_record_details","reference_display":"Get Record Details","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"38645159-2cde-4e1e-b37c-e69dc11bcdb6.table_name","label":"5➛Get Record Details Table","reference":"sn_bmcremedy_spoke_get_record_details","reference_display":"Get Record Details","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"38645159-2cde-4e1e-b37c-e69dc11bcdb6.status","label":"5➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"38645159-2cde-4e1e-b37c-e69dc11bcdb6.error_message","label":"5➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.InstanceId","label":"3.1➛Record_child0➛InstanceId","type":"string","base_type":"string"},{"name":"95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Site_Group","label":"3.1➛Record_child0➛Site Group","type":"string","base_type":"string"},{"name":"95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Department","label":"3.1➛Record_child0➛Department","type":"string","base_type":"string"},{"name":"ebd62c79-8643-41d6-820a-d84fa94b78ba.record","label":"2➛Record","reference_display":"Record","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"853ba3d2-452d-499c-aa6a-aa7a0949276f"}},{"name":"ebd62c79-8643-41d6-820a-d84fa94b78ba.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9c1f6f25-fcfb-42d2-b08f-bf45dc0f343a"}},{"name":"ebd62c79-8643-41d6-820a-d84fa94b78ba.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"37b1fb2a-b011-4fba-aaf1-5a7b400fe70f"}},{"name":"997c2771-be5c-4e07-9e15-b22ed2cadfa9.record","label":"2.2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"997c2771-be5c-4e07-9e15-b22ed2cadfa9.table_name","label":"2.2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Run Once_1.run_start_time","label":"Trigger➛Run Start Time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"test_input_hidden":"true"}},{"name":"dcb76615-bb92-4cd1-ba63-d6f9adf749e2.record","label":"3.2➛Get Record Details Last Modified Date Record","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dcb76615-bb92-4cd1-ba63-d6f9adf749e2.table_name","label":"3.2➛Get Record Details Last Modified Date Table","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dcb76615-bb92-4cd1-ba63-d6f9adf749e2.status","label":"3.2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dcb76615-bb92-4cd1-ba63-d6f9adf749e2.error_message","label":"3.2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a53fecf4-ea70-436c-b975-8e09ef64fae2.Record","label":"1➛Get Record Details Last Modified Date Record","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a53fecf4-ea70-436c-b975-8e09ef64fae2.Table","label":"1➛Get Record Details Last Modified Date Table","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a53fecf4-ea70-436c-b975-8e09ef64fae2.Record.next_execution_timestamp","label":"1➛Get Record Details Last Modified Date Record➛Next Execution Timestamp","reference":"","reference_display":"Next Execution Timestamp","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sn_bmcremedy_spoke_get_record_details_last_modified_date","column_name":"next_execution_timestamp"},{"name":"a53fecf4-ea70-436c-b975-8e09ef64fae2.Record.sys_id","label":"1➛Get Record Details Last Modified Date Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_bmcremedy_spoke_get_record_details_last_modified_date","column_name":"sys_id"},{"name":"d96ff682-841f-43da-8ed0-fe5574999a25.record","label":"5➛Get Record Details Last Modified Date Record","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d96ff682-841f-43da-8ed0-fe5574999a25.table_name","label":"5➛Get Record Details Last Modified Date Table","reference":"sn_bmcremedy_spoke_get_record_details_last_modified_date","reference_display":"Get Record Details Last Modified Date","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Look up Record</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bd6bc9411b8ce0505a0ec1f61a4bcb46</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Look up Record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="mylocl" source="x_snc_mylocl">a6ca01411b8ce0505a0ec1f61a4bcbff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="mylocl">a6ca01411b8ce0505a0ec1f61a4bcbff</sys_scope>
+        <sys_update_name>sys_hub_flow_bd6bc9411b8ce0505a0ec1f61a4bcb46</sys_update_name>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:14</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=bd6bc9411b8ce0505a0ec1f61a4bcb46"/>
+    <sys_variable_value action="delete_multiple" query="document_key=bd6bc9411b8ce0505a0ec1f61a4bcb46"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=bd6bc9411b8ce0505a0ec1f61a4bcb46^sys_idNOT IN026bc9411b8ce0505a0ec1f61a4bcb61,126bc9411b8ce0505a0ec1f61a4bcb64,476bc9411b8ce0505a0ec1f61a4bcbc0,526bc9411b8ce0505a0ec1f61a4bcb6e,7e6bc9411b8ce0505a0ec1f61a4bcbba,866bc9411b8ce0505a0ec1f61a4bcb5c,b26bc9411b8ce0505a0ec1f61a4bcbad,fe6bc9411b8ce0505a0ec1f61a4bcbb4"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ce4764cd1b0ce0505a0ec1f61a4bcb2b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>92b0ac6d-25dd-441e-bfcb-5f35ba3d8caa</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:09</sys_created_on>
+        <sys_id>026bc9411b8ce0505a0ec1f61a4bcb61</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:09</sys_updated_on>
+        <ui_id>95894f4b-7eb4-4e06-97bf-235bb9a6c1af</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=026bc9411b8ce0505a0ec1f61a4bcb61"/>
+    <sys_element_mapping action="delete_multiple" query="id=026bc9411b8ce0505a0ec1f61a4bcb61"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>026bc9411b8ce0505a0ec1f61a4bcb61</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:10</sys_created_on>
+        <sys_id>c66bc9411b8ce0505a0ec1f61a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{ebd62c79-8643-41d6-820a-d84fa94b78ba.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">424764cd1b0ce0505a0ec1f61a4bcb31</block>
+        <comment/>
+        <connected_to>92b0ac6d-25dd-441e-bfcb-5f35ba3d8caa</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:10</sys_created_on>
+        <sys_id>126bc9411b8ce0505a0ec1f61a4bcb64</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:10</sys_updated_on>
+        <ui_id>8c7fdd97-1b81-4c06-aaba-663bbc4ccc8b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=126bc9411b8ce0505a0ec1f61a4bcb64"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>476bc9411b8ce0505a0ec1f61a4bcbc0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="mylocl">a6ca01411b8ce0505a0ec1f61a4bcbff</sys_scope>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <ui_id>fec91993-3e5e-4fc4-81fc-23178e094a1b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=476bc9411b8ce0505a0ec1f61a4bcbc0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>476bc9411b8ce0505a0ec1f61a4bcbc0</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>c36bc9411b8ce0505a0ec1f61a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <value>sn_bmcremedy_spoke_get_record_details_last_modified_date</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=476bc9411b8ce0505a0ec1f61a4bcbc0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>476bc9411b8ce0505a0ec1f61a4bcbc0</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>8f6bc9411b8ce0505a0ec1f61a4bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{13354e20-fb9e-4d2c-9328-f25a9e1302ac.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>476bc9411b8ce0505a0ec1f61a4bcbc0</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>cb6bc9411b8ce0505a0ec1f61a4bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>476bc9411b8ce0505a0ec1f61a4bcbc0</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>436bc9411b8ce0505a0ec1f61a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>next_execution_timestamp={{Run Once_1.run_start_time}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:10</sys_created_on>
+        <sys_id>526bc9411b8ce0505a0ec1f61a4bcb6e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="mylocl">a6ca01411b8ce0505a0ec1f61a4bcbff</sys_scope>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:10</sys_updated_on>
+        <ui_id>13354e20-fb9e-4d2c-9328-f25a9e1302ac</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=526bc9411b8ce0505a0ec1f61a4bcb6e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>526bc9411b8ce0505a0ec1f61a4bcb6e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:10</sys_created_on>
+        <sys_id>566bc9411b8ce0505a0ec1f61a4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:10</sys_updated_on>
+        <value>sn_bmcremedy_spoke_get_record_details_last_modified_date</value>
+        <variable display_value="">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>526bc9411b8ce0505a0ec1f61a4bcb6e</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:10</sys_created_on>
+        <sys_id>926bc9411b8ce0505a0ec1f61a4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:10</sys_updated_on>
+        <value>next_execution_timestamp</value>
+        <variable display_value="">1d09f99587003300663ca1bb36cb0bad</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>526bc9411b8ce0505a0ec1f61a4bcb6e</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:10</sys_created_on>
+        <sys_id>de6bc9411b8ce0505a0ec1f61a4bcb70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:10</sys_updated_on>
+        <value>sort_desc</value>
+        <variable display_value="">5d09f99587003300663ca1bb36cb0bb1</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <order>7</order>
+        <parent_ui_id>8c7fdd97-1b81-4c06-aaba-663bbc4ccc8b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>7e6bc9411b8ce0505a0ec1f61a4bcbba</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="mylocl">a6ca01411b8ce0505a0ec1f61a4bcbff</sys_scope>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <ui_id>819cecaf-9c05-4335-a5ad-3a39d7f02e0a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7e6bc9411b8ce0505a0ec1f61a4bcbba"/>
+    <sys_element_mapping action="delete_multiple" query="id=7e6bc9411b8ce0505a0ec1f61a4bcbba"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>7e6bc9411b8ce0505a0ec1f61a4bcbba</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>726bc9411b8ce0505a0ec1f61a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{ebd62c79-8643-41d6-820a-d84fa94b78ba.error_message}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">794764cd1b0ce0505a0ec1f61a4bcb26</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:09</sys_created_on>
+        <sys_id>866bc9411b8ce0505a0ec1f61a4bcb5c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:09</sys_updated_on>
+        <ui_id>92b0ac6d-25dd-441e-bfcb-5f35ba3d8caa</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=866bc9411b8ce0505a0ec1f61a4bcb5c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>866bc9411b8ce0505a0ec1f61a4bcb5c</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:09</sys_created_on>
+        <sys_id>026bc9411b8ce0505a0ec1f61a4bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:09</sys_updated_on>
+        <value>Status is Success</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=866bc9411b8ce0505a0ec1f61a4bcb5c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>866bc9411b8ce0505a0ec1f61a4bcb5c</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:09</sys_created_on>
+        <sys_id>8e6bc9411b8ce0505a0ec1f61a4bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:09</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ebd62c79-8643-41d6-820a-d84fa94b78ba.status}}=Success</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>866bc9411b8ce0505a0ec1f61a4bcb5c</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:09</sys_created_on>
+        <sys_id>c66bc9411b8ce0505a0ec1f61a4bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:09</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look up Record">6333b7eb1b7304101d177669cc4bcbd8</action_type>
+        <action_type_parent display_value="Look up Record">8aedefa71b7304101d177669cc4bcb91</action_type_parent>
+        <comment/>
+        <compiled_snapshot>6333b7eb1b7304101d177669cc4bcbd8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>b26bc9411b8ce0505a0ec1f61a4bcbad</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="mylocl">a6ca01411b8ce0505a0ec1f61a4bcbff</sys_scope>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <ui_id>ebd62c79-8643-41d6-820a-d84fa94b78ba</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b26bc9411b8ce0505a0ec1f61a4bcbad"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b26bc9411b8ce0505a0ec1f61a4bcbad</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>726bc9411b8ce0505a0ec1f61a4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <value>HPD:IncidentInterface</value>
+        <variable display_value="">a333b7eb1b7304101d177669cc4bcbf1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b26bc9411b8ce0505a0ec1f61a4bcbad</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>be6bc9411b8ce0505a0ec1f61a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <value>{"children":[{"name":"Request_ID","label":"Request ID","type":"string"},{"name":"Submitter","label":"Submitter","type":"string"},{"name":"Submit_Date","label":"Submit Date","type":"string"},{"name":"Assignee_Login_ID","label":"Assignee Login ID","type":"string"},{"name":"Last_Modified_By","label":"Last Modified By","type":"string"},{"name":"Last_Modified_Date","label":"Last Modified Date","type":"string"},{"name":"Status","label":"Status","type":"string"},{"name":"Status-History","label":"Status-History","type":"string"},{"name":"Assignee_Groups","label":"Assignee Groups","type":"string"},{"name":"InstanceId","label":"InstanceId","type":"string"},{"name":"Vendor_Assignee_Groups","label":"Vendor Assignee Groups","type":"string"},{"name":"Vendor_Assignee_Groups_parent","label":"Vendor Assignee Groups_parent","type":"string"},{"name":"Assignee_Groups_parent","label":"Assignee Groups_parent","type":"string"},{"name":"Product_Categorization_Tier_1","label":"Product Categorization Tier 1","type":"string"},{"name":"Product_Categorization_Tier_2","label":"Product Categorization Tier 2","type":"string"},{"name":"Product_Categorization_Tier_3","label":"Product Categorization Tier 3","type":"string"},{"name":"Department","label":"Department","type":"string"},{"name":"Site_Group","label":"Site Group","type":"string"},{"name":"Region","label":"Region","type":"string"},{"name":"Product_Name","label":"Product Name","type":"string"},{"name":"Manufacturer","label":"Manufacturer","type":"string"},{"name":"Product_Model/Version","label":"Product Model/Version","type":"string"},{"name":"Site","label":"Site","type":"string"},{"name":"PageTitle_txt","label":"PageTitle_txt","type":"string"},{"name":"SRAttachment","label":"SRAttachment","type":"string"},{"name":"Created_By","label":"Created_By","type":"string"},{"name":"MaxRetries","label":"MaxRetries","type":"string"},{"name":"z1D_Command","label":"z1D_Command","type":"string"},{"name":"AccessMode","label":"AccessMode","type":"string"},{"name":"z1D_WorklogDetails","label":"z1D_WorklogDetails","type":"string"},{"name":"z1D_Char02","label":"z1D_Char02","type":"string"},{"name":"z2AP_Attachment","label":"z2AP_Attachment","type":"string"},{"name":"z1D_FormName","label":"z1D_FormName","type":"string"},{"name":"AppInstanceServer","label":"AppInstanceServer","type":"string"},{"name":"SRInstanceID","label":"SRInstanceID","type":"string"},{"name":"zTmpEventGUID","label":"zTmpEventGUID","type":"string"},{"name":"AppInterfaceForm","label":"AppInterfaceForm","type":"string"},{"name":"z5Text_InputFields2","label":"z5Text_InputFields2","type":"string"},{"name":"z5Text_UpdateFields","label":"z5Text_UpdateFields","type":"string"},{"name":"Entry_ID","label":"Entry ID","type":"string"},{"name":"z1D_Activity_Type","label":"z1D_Activity_Type","type":"string"},{"name":"z1D_Summary","label":"z1D_Summary","type":"string"},{"name":"z1D_Details","label":"z1D_Details","type":"string"},{"name":"z1D_Secure_Log","label":"z1D_Secure_Log","type":"string"},{"name":"z1D_View_Access","label":"z1D_View_Access","type":"string"},{"name":"z2AF_Act_Attachment_1","label":"z2AF_Act_Attachment_1","type":"string"},{"name":"Protocol","label":"Protocol","type":"string"},{"name":"AppLogin","label":"AppLogin","type":"string"},{"name":"AppPassword","label":"AppPassword","type":"string"},{"name":"PortNumber","label":"PortNumber","type":"string"},{"name":"z5Text_AppTitle","label":"z5Text_AppTitle","type":"string"},{"name":"SRMS_Registry_Instance_ID","label":"SRMS Registry Instance ID","type":"string"},{"name":"SRMSAOIGuid","label":"SRMSAOIGuid","type":"string"},{"name":"SRID","label":"SRID","type":"string"},{"name":"TemplateID","label":"TemplateID","type":"string"},{"name":"z5Text_SRMSTitle","label":"z5Text_SRMSTitle","type":"string"},{"name":"z1D_CommunicationSource","label":"z1D_CommunicationSource","type":"string"},{"name":"z1D_ActivityDate_tab","label":"z1D_ActivityDate_tab","type":"string"},{"name":"Last__Assigned_Date","label":"Last _Assigned_Date","type":"string"},{"name":"z1D_AssociationDescription","label":"z1D_AssociationDescription","type":"string"},{"name":"Component_ID","label":"Component_ID","type":"string"},{"name":"mc_ueid","label":"mc_ueid","type":"string"},{"name":"cell_name","label":"cell_name","type":"string"},{"name":"policy_name","label":"policy_name","type":"string"},{"name":"status_incident","label":"status_incident","type":"string"},{"name":"status_reason2","label":"status_reason2","type":"string"},{"name":"root_component_id_list","label":"root_component_id_list","type":"string"},{"name":"root_incident_id_list","label":"root_incident_id_list","type":"string"},{"name":"Impact_OR_Root","label":"Impact_OR_Root","type":"string"},{"name":"bOrphanedRoot","label":"bOrphanedRoot","type":"string"},{"name":"use_case","label":"use_case","type":"string"},{"name":"ClientLocale","label":"ClientLocale","type":"string"},{"name":"ServiceCI","label":"ServiceCI","type":"string"},{"name":"HPD_CI","label":"HPD_CI","type":"string"},{"name":"ServiceCI_ReconID","label":"ServiceCI_ReconID","type":"string"},{"name":"HPD_CI_ReconID","label":"HPD_CI_ReconID","type":"string"},{"name":"z1D_CI_FormName","label":"z1D_CI_FormName","type":"string"},{"name":"Previous_ServiceCI_ReconID","label":"Previous_ServiceCI_ReconID","type":"string"},{"name":"Previous_HPD_CI_ReconID","label":"Previous_HPD_CI_ReconID","type":"string"},{"name":"z1D_SR_Instanceid","label":"z1D_SR_Instanceid","type":"string"},{"name":"Direct_Contact_Corporate_ID","label":"Direct Contact Corporate ID","type":"string"},{"name":"KMSGUID","label":"KMSGUID","type":"string"},{"name":"HPD_CI_FormName","label":"HPD_CI_FormName","type":"string"},{"name":"z1D_InterfaceAction","label":"z1D_InterfaceAction","type":"string"},{"name":"z1D_WorkInfoSubmitter","label":"z1D_WorkInfoSubmitter","type":"string"},{"name":"Direct_Contact_Login_ID","label":"Direct Contact Login ID","type":"string"},{"name":"Customer_Login_ID","label":"Customer Login ID","type":"string"},{"name":"AttachmentSourceFormName","label":"AttachmentSourceFormName","type":"string"},{"name":"AttachmentSourceGUID","label":"AttachmentSourceGUID","type":"string"},{"name":"z1D_ConfirmGroup","label":"z1D_ConfirmGroup","type":"string"},{"name":"z1D_CreatedFromBackEndSynchWI","label":"z1D_CreatedFromBackEndSynchWI","type":"string"},{"name":"InfrastructureEventType","label":"InfrastructureEventType","type":"string"},{"name":"policy_type","label":"policy_type","type":"string"},{"name":"Chat_Session_ID","label":"Chat Session ID","type":"string"},{"name":"Modified_Chat_Session_ID","label":"Modified Chat Session ID","type":"string"},{"name":"Auto_Open_Session","label":"Auto Open Session","type":"string"},{"name":"TimeOfEvent","label":"TimeOfEvent","type":"string"},{"name":"FirstWIPDate","label":"FirstWIPDate","type":"string"},{"name":"LastWIPDate","label":"LastWIPDate","type":"string"},{"name":"Broker_Vendor_Name","label":"Broker Vendor Name","type":"string"},{"name":"Description","label":"Description","type":"string"},{"name":"Company","label":"Company","type":"string"},{"name":"Country","label":"Country","type":"string"},{"name":"State_Province","label":"State Province","type":"string"},{"name":"City","label":"City","type":"string"},{"name":"Organization","label":"Organization","type":"string"},{"name":"Assigned_Support_Organization","label":"Assigned Support Organization","type":"string"},{"name":"Last_Name","label":"Last Name","type":"string"},{"name":"First_Name","label":"First Name","type":"string"},{"name":"Middle_Initial","label":"Middle Initial","type":"string"},{"name":"Contact_Client_Type","label":"Contact Client Type","type":"string"},{"name":"VIP","label":"VIP","type":"string"},{"name":"Contact_Sensitivity","label":"Contact Sensitivity","type":"string"},{"name":"Desk_Location","label":"Desk Location","type":"string"},{"name":"Mail_Station","label":"Mail Station","type":"string"},{"name":"Street","label":"Street","type":"string"},{"name":"Zip/Postal_Code","label":"Zip/Postal Code","type":"string"},{"name":"Internet_E-mail","label":"Internet E-mail","type":"string"},{"name":"Corporate_ID","label":"Corporate ID","type":"string"},{"name":"Phone_Number","label":"Phone Number","type":"string"},{"name":"z1D_Char01","label":"z1D Char01","type":"string"},{"name":"Categorization_Tier_1","label":"Categorization Tier 1","type":"string"},{"name":"Categorization_Tier_2","label":"Categorization Tier 2","type":"string"},{"name":"Categorization_Tier_3","label":"Categorization Tier 3","type":"string"},{"name":"z1D_Char02","label":"z1D Char02","type":"string"},{"name":"Site_ID","label":"Site ID","type":"string"},{"name":"z1D_Action","label":"z1D Action","type":"string"},{"name":"Assigned_Group_ID","label":"Assigned Group ID","type":"string"},{"name":"Person_ID","label":"Person ID","type":"string"},{"name":"Contact_Company","label":"Contact Company","type":"string"},{"name":"Service_Type","label":"Service Type","type":"string"},{"name":"Status_Reason","label":"Status_Reason","type":"string"},{"name":"Detailed_Decription","label":"Detailed Decription","type":"string"},{"name":"Resolution","label":"Resolution","type":"string"},{"name":"Incident_Number","label":"Incident Number","type":"string"},{"name":"Urgency","label":"Urgency","type":"string"},{"name":"Impact","label":"Impact","type":"string"},{"name":"Priority","label":"Priority","type":"string"},{"name":"Priority_Weight","label":"Priority Weight","type":"string"},{"name":"Reported_Source","label":"Reported Source","type":"string"},{"name":"Assigned_Group","label":"Assigned Group","type":"string"},{"name":"Assignee","label":"Assignee","type":"string"},{"name":"Assigned_Support_Company","label":"Assigned Support Company","type":"string"},{"name":"Assigned_Group_Shift_Name","label":"Assigned Group Shift Name","type":"string"},{"name":"Assigned_Group_Shift_ID","label":"Assigned Group Shift ID","type":"string"},{"name":"Owner_Support_Organization","label":"Owner Support Organization","type":"string"},{"name":"Number_of_Attachments","label":"Number of Attachments","type":"string"},{"name":"Vendor_Name","label":"Vendor Name","type":"string"},{"name":"Owner_Group","label":"Owner Group","type":"string"},{"name":"Owner_Support_Company","label":"Owner Support Company","type":"string"},{"name":"Owner_Group_ID","label":"Owner Group ID","type":"string"},{"name":"Reported_Date","label":"Reported Date","type":"string"},{"name":"Responded_Date","label":"Responded Date","type":"string"},{"name":"Last_Acknowledged_Date","label":"Last Acknowledged Date","type":"string"},{"name":"Last_Resolved_Date","label":"Last Resolved Date","type":"string"},{"name":"Closed_Date","label":"Closed Date","type":"string"},{"name":"Vendor_Ticket_Number","label":"Vendor Ticket Number","type":"string"},{"name":"z1D_Permission_Group_ID","label":"z1D Permission Group ID","type":"string"},{"name":"z1D_Permission_Group_List","label":"z1D Permission Group List","type":"string"},{"name":"Resolution_Category","label":"Resolution Category","type":"string"},{"name":"Direct_Contact_Internet_E-mail","label":"Direct Contact Internet E-mail","type":"string"},{"name":"Vendor_Organization","label":"Vendor Organization","type":"string"},{"name":"Vendor_Group","label":"Vendor Group","type":"string"},{"name":"Vendor_Group_ID","label":"Vendor Group ID","type":"string"},{"name":"Total_Transfers","label":"Total Transfers","type":"string"},{"name":"Resolution_Method","label":"Resolution Method","type":"string"},{"name":"Resolution_Category_Tier_2","label":"Resolution Category Tier 2","type":"string"},{"name":"Resolution_Category_Tier_3","label":"Resolution Category Tier 3","type":"string"},{"name":"Closure_Product_Category_Tier1","label":"Closure Product Category Tier1","type":"string"},{"name":"Closure_Product_Category_Tier2","label":"Closure Product Category Tier2","type":"string"},{"name":"Closure_Product_Category_Tier3","label":"Closure Product Category Tier3","type":"string"},{"name":"Closure_Product_Name","label":"Closure Product Name","type":"string"},{"name":"Closure_Product_Model/Version","label":"Closure Product Model/Version","type":"string"},{"name":"Closure_Manufacturer","label":"Closure Manufacturer","type":"string"},{"name":"Estimated_Resolution_Date","label":"Estimated Resolution Date","type":"string"},{"name":"Required_Resolution_DateTime","label":"Required Resolution DateTime","type":"string"},{"name":"Direct_Contact_Company","label":"Direct Contact Company","type":"string"},{"name":"Direct_Contact_Last_Name","label":"Direct Contact Last Name","type":"string"},{"name":"Direct_Contact_First_Name","label":"Direct Contact First Name","type":"string"},{"name":"Direct_Contact_Middle_Initial","label":"Direct Contact Middle Initial","type":"string"},{"name":"Direct_Contact_Phone_Number","label":"Direct Contact Phone Number","type":"string"},{"name":"Direct_Contact_Organization","label":"Direct Contact Organization","type":"string"},{"name":"Direct_Contact_Department","label":"Direct Contact Department","type":"string"},{"name":"Direct_Contact_Region","label":"Direct Contact Region","type":"string"},{"name":"Direct_Contact_Site_Group","label":"Direct Contact Site Group","type":"string"},{"name":"Direct_Contact_Site","label":"Direct Contact Site","type":"string"},{"name":"Direct_Contact_Person_ID","label":"Direct Contact Person ID","type":"string"},{"name":"Direct_Contact_Street","label":"Direct Contact Street","type":"string"},{"name":"Direct_Contact_Country","label":"Direct Contact Country","type":"string"},{"name":"Direct_Contact_State/Province","label":"Direct Contact State/Province","type":"string"},{"name":"Direct_Contact_City","label":"Direct Contact City","type":"string"},{"name":"Direct_Contact_Zip/Postal_Code","label":"Direct Contact Zip/Postal Code","type":"string"},{"name":"Direct_Contact_Time_Zone","label":"Direct Contact Time Zone","type":"string"},{"name":"Direct_Contact_Desk_Location","label":"Direct Contact Desk Location","type":"string"},{"name":"Direct_Contact_Mail_Station","label":"Direct Contact Mail Station","type":"string"},{"name":"Direct_Contact_Location_Details","label":"Direct Contact Location Details","type":"string"},{"name":"Direct_Contact_Site_ID","label":"Direct Contact Site ID","type":"string"},{"name":"Direct_Contact_Country_Code","label":"Direct Contact Country Code","type":"string"},{"name":"Direct_Contact_Area_Code","label":"Direct Contact Area Code","type":"string"},{"name":"Direct_Contact_Local_Number","label":"Direct Contact Local Number","type":"string"},{"name":"Direct_Contact_Extension","label":"Direct Contact Extension","type":"string"}],"type":"array.object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"853ba3d2-452d-499c-aa6a-aa7a0949276f"}}</value>
+        <variable display_value="">3333f7eb1b7304101d177669cc4bcb0a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b26bc9411b8ce0505a0ec1f61a4bcbad</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>fa6bc9411b8ce0505a0ec1f61a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <value>1fb9c4181b270810a2a9c91b1e4bcb08</value>
+        <variable display_value="">6b33b7eb1b7304101d177669cc4bcbdd</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b26bc9411b8ce0505a0ec1f61a4bcbad"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>b26bc9411b8ce0505a0ec1f61a4bcbad</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>f26bc9411b8ce0505a0ec1f61a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6333b7eb1b7304101d177669cc4bcbd8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>dynamic_hidden_input_record</field>
+        <id>b26bc9411b8ce0505a0ec1f61a4bcbad</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>326bc9411b8ce0505a0ec1f61a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6333b7eb1b7304101d177669cc4bcbd8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>object</field>
+        <id>b26bc9411b8ce0505a0ec1f61a4bcbad</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>7a6bc9411b8ce0505a0ec1f61a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6333b7eb1b7304101d177669cc4bcbd8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_fields</field>
+        <id>b26bc9411b8ce0505a0ec1f61a4bcbad</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>b66bc9411b8ce0505a0ec1f61a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6333b7eb1b7304101d177669cc4bcbd8</table>
+        <value>Last Modified Date={{13354e20-fb9e-4d2c-9328-f25a9e1302ac.Record.next_execution_timestamp}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <order>5</order>
+        <parent_ui_id>95894f4b-7eb4-4e06-97bf-235bb9a6c1af</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>fe6bc9411b8ce0505a0ec1f61a4bcbb4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="mylocl">a6ca01411b8ce0505a0ec1f61a4bcbff</sys_scope>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <ui_id>38645159-2cde-4e1e-b37c-e69dc11bcdb6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fe6bc9411b8ce0505a0ec1f61a4bcbb4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fe6bc9411b8ce0505a0ec1f61a4bcbb4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>fa6bc9411b8ce0505a0ec1f61a4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <value>sn_bmcremedy_spoke_get_record_details</value>
+        <variable display_value="">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fe6bc9411b8ce0505a0ec1f61a4bcbb4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>fe6bc9411b8ce0505a0ec1f61a4bcbb4</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>b66bc9411b8ce0505a0ec1f61a4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>incident_number={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Incident_Number}}^request_id={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Request_ID}}^instanceid={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.InstanceId}}^status={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Status}}^submitter={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Submitter}}^department={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Department}}^site_group={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Site_Group}}^coalesce_fields=incident_number</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>fe6bc9411b8ce0505a0ec1f61a4bcbb4</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>7a6bc9411b8ce0505a0ec1f61a4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=bd6bc9411b8ce0505a0ec1f61a4bcb46^sys_idNOT IN4b6bc9411b8ce0505a0ec1f61a4bcbc2"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <name>Run Once</name>
+        <remote_sys_id/>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>4b6bc9411b8ce0505a0ec1f61a4bcbc2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>run_once</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4b6bc9411b8ce0505a0ec1f61a4bcbc2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4b6bc9411b8ce0505a0ec1f61a4bcbc2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>0b6bc9411b8ce0505a0ec1f61a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <value>2020-06-08 17:00:00</value>
+        <variable display_value="">92afcd94c32222002841b63b12d3aee8</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=bd6bc9411b8ce0505a0ec1f61a4bcb46^sys_idNOT IN756bc9411b8ce0505a0ec1f61a4bcb49"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>bd6bc9411b8ce0505a0ec1f61a4bcb46</id>
+        <name>Look up Record</name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:08</sys_created_on>
+        <sys_id>756bc9411b8ce0505a0ec1f61a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:08</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=bd6bc9411b8ce0505a0ec1f61a4bcb46^sys_idNOT IN476bc9411b8ce0505a0ec1f61a4bcbc0,526bc9411b8ce0505a0ec1f61a4bcb6e,7e6bc9411b8ce0505a0ec1f61a4bcbba,b26bc9411b8ce0505a0ec1f61a4bcbad,fe6bc9411b8ce0505a0ec1f61a4bcbb4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>476bc9411b8ce0505a0ec1f61a4bcbc0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="mylocl">a6ca01411b8ce0505a0ec1f61a4bcbff</sys_scope>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <ui_id>fec91993-3e5e-4fc4-81fc-23178e094a1b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=476bc9411b8ce0505a0ec1f61a4bcbc0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>476bc9411b8ce0505a0ec1f61a4bcbc0</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>c36bc9411b8ce0505a0ec1f61a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <value>sn_bmcremedy_spoke_get_record_details_last_modified_date</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=476bc9411b8ce0505a0ec1f61a4bcbc0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>476bc9411b8ce0505a0ec1f61a4bcbc0</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>8f6bc9411b8ce0505a0ec1f61a4bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{13354e20-fb9e-4d2c-9328-f25a9e1302ac.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>476bc9411b8ce0505a0ec1f61a4bcbc0</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>cb6bc9411b8ce0505a0ec1f61a4bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>476bc9411b8ce0505a0ec1f61a4bcbc0</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>436bc9411b8ce0505a0ec1f61a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>next_execution_timestamp={{Run Once_1.run_start_time}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:10</sys_created_on>
+        <sys_id>526bc9411b8ce0505a0ec1f61a4bcb6e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="mylocl">a6ca01411b8ce0505a0ec1f61a4bcbff</sys_scope>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:10</sys_updated_on>
+        <ui_id>13354e20-fb9e-4d2c-9328-f25a9e1302ac</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=526bc9411b8ce0505a0ec1f61a4bcb6e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>526bc9411b8ce0505a0ec1f61a4bcb6e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:10</sys_created_on>
+        <sys_id>566bc9411b8ce0505a0ec1f61a4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:10</sys_updated_on>
+        <value>sn_bmcremedy_spoke_get_record_details_last_modified_date</value>
+        <variable display_value="">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>526bc9411b8ce0505a0ec1f61a4bcb6e</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:10</sys_created_on>
+        <sys_id>926bc9411b8ce0505a0ec1f61a4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:10</sys_updated_on>
+        <value>next_execution_timestamp</value>
+        <variable display_value="">1d09f99587003300663ca1bb36cb0bad</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>526bc9411b8ce0505a0ec1f61a4bcb6e</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:10</sys_created_on>
+        <sys_id>de6bc9411b8ce0505a0ec1f61a4bcb70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:10</sys_updated_on>
+        <value>sort_desc</value>
+        <variable display_value="">5d09f99587003300663ca1bb36cb0bb1</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <order>7</order>
+        <parent_ui_id>8c7fdd97-1b81-4c06-aaba-663bbc4ccc8b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>7e6bc9411b8ce0505a0ec1f61a4bcbba</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="mylocl">a6ca01411b8ce0505a0ec1f61a4bcbff</sys_scope>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <ui_id>819cecaf-9c05-4335-a5ad-3a39d7f02e0a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7e6bc9411b8ce0505a0ec1f61a4bcbba"/>
+    <sys_element_mapping action="delete_multiple" query="id=7e6bc9411b8ce0505a0ec1f61a4bcbba"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>7e6bc9411b8ce0505a0ec1f61a4bcbba</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:13</sys_created_on>
+        <sys_id>726bc9411b8ce0505a0ec1f61a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{ebd62c79-8643-41d6-820a-d84fa94b78ba.error_message}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look up Record">6333b7eb1b7304101d177669cc4bcbd8</action_type>
+        <action_type_parent display_value="Look up Record">8aedefa71b7304101d177669cc4bcb91</action_type_parent>
+        <comment/>
+        <compiled_snapshot>6333b7eb1b7304101d177669cc4bcbd8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>b26bc9411b8ce0505a0ec1f61a4bcbad</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="mylocl">a6ca01411b8ce0505a0ec1f61a4bcbff</sys_scope>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <ui_id>ebd62c79-8643-41d6-820a-d84fa94b78ba</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b26bc9411b8ce0505a0ec1f61a4bcbad"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b26bc9411b8ce0505a0ec1f61a4bcbad</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>726bc9411b8ce0505a0ec1f61a4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <value>HPD:IncidentInterface</value>
+        <variable display_value="">a333b7eb1b7304101d177669cc4bcbf1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b26bc9411b8ce0505a0ec1f61a4bcbad</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>be6bc9411b8ce0505a0ec1f61a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <value>{"children":[{"name":"Request_ID","label":"Request ID","type":"string"},{"name":"Submitter","label":"Submitter","type":"string"},{"name":"Submit_Date","label":"Submit Date","type":"string"},{"name":"Assignee_Login_ID","label":"Assignee Login ID","type":"string"},{"name":"Last_Modified_By","label":"Last Modified By","type":"string"},{"name":"Last_Modified_Date","label":"Last Modified Date","type":"string"},{"name":"Status","label":"Status","type":"string"},{"name":"Status-History","label":"Status-History","type":"string"},{"name":"Assignee_Groups","label":"Assignee Groups","type":"string"},{"name":"InstanceId","label":"InstanceId","type":"string"},{"name":"Vendor_Assignee_Groups","label":"Vendor Assignee Groups","type":"string"},{"name":"Vendor_Assignee_Groups_parent","label":"Vendor Assignee Groups_parent","type":"string"},{"name":"Assignee_Groups_parent","label":"Assignee Groups_parent","type":"string"},{"name":"Product_Categorization_Tier_1","label":"Product Categorization Tier 1","type":"string"},{"name":"Product_Categorization_Tier_2","label":"Product Categorization Tier 2","type":"string"},{"name":"Product_Categorization_Tier_3","label":"Product Categorization Tier 3","type":"string"},{"name":"Department","label":"Department","type":"string"},{"name":"Site_Group","label":"Site Group","type":"string"},{"name":"Region","label":"Region","type":"string"},{"name":"Product_Name","label":"Product Name","type":"string"},{"name":"Manufacturer","label":"Manufacturer","type":"string"},{"name":"Product_Model/Version","label":"Product Model/Version","type":"string"},{"name":"Site","label":"Site","type":"string"},{"name":"PageTitle_txt","label":"PageTitle_txt","type":"string"},{"name":"SRAttachment","label":"SRAttachment","type":"string"},{"name":"Created_By","label":"Created_By","type":"string"},{"name":"MaxRetries","label":"MaxRetries","type":"string"},{"name":"z1D_Command","label":"z1D_Command","type":"string"},{"name":"AccessMode","label":"AccessMode","type":"string"},{"name":"z1D_WorklogDetails","label":"z1D_WorklogDetails","type":"string"},{"name":"z1D_Char02","label":"z1D_Char02","type":"string"},{"name":"z2AP_Attachment","label":"z2AP_Attachment","type":"string"},{"name":"z1D_FormName","label":"z1D_FormName","type":"string"},{"name":"AppInstanceServer","label":"AppInstanceServer","type":"string"},{"name":"SRInstanceID","label":"SRInstanceID","type":"string"},{"name":"zTmpEventGUID","label":"zTmpEventGUID","type":"string"},{"name":"AppInterfaceForm","label":"AppInterfaceForm","type":"string"},{"name":"z5Text_InputFields2","label":"z5Text_InputFields2","type":"string"},{"name":"z5Text_UpdateFields","label":"z5Text_UpdateFields","type":"string"},{"name":"Entry_ID","label":"Entry ID","type":"string"},{"name":"z1D_Activity_Type","label":"z1D_Activity_Type","type":"string"},{"name":"z1D_Summary","label":"z1D_Summary","type":"string"},{"name":"z1D_Details","label":"z1D_Details","type":"string"},{"name":"z1D_Secure_Log","label":"z1D_Secure_Log","type":"string"},{"name":"z1D_View_Access","label":"z1D_View_Access","type":"string"},{"name":"z2AF_Act_Attachment_1","label":"z2AF_Act_Attachment_1","type":"string"},{"name":"Protocol","label":"Protocol","type":"string"},{"name":"AppLogin","label":"AppLogin","type":"string"},{"name":"AppPassword","label":"AppPassword","type":"string"},{"name":"PortNumber","label":"PortNumber","type":"string"},{"name":"z5Text_AppTitle","label":"z5Text_AppTitle","type":"string"},{"name":"SRMS_Registry_Instance_ID","label":"SRMS Registry Instance ID","type":"string"},{"name":"SRMSAOIGuid","label":"SRMSAOIGuid","type":"string"},{"name":"SRID","label":"SRID","type":"string"},{"name":"TemplateID","label":"TemplateID","type":"string"},{"name":"z5Text_SRMSTitle","label":"z5Text_SRMSTitle","type":"string"},{"name":"z1D_CommunicationSource","label":"z1D_CommunicationSource","type":"string"},{"name":"z1D_ActivityDate_tab","label":"z1D_ActivityDate_tab","type":"string"},{"name":"Last__Assigned_Date","label":"Last _Assigned_Date","type":"string"},{"name":"z1D_AssociationDescription","label":"z1D_AssociationDescription","type":"string"},{"name":"Component_ID","label":"Component_ID","type":"string"},{"name":"mc_ueid","label":"mc_ueid","type":"string"},{"name":"cell_name","label":"cell_name","type":"string"},{"name":"policy_name","label":"policy_name","type":"string"},{"name":"status_incident","label":"status_incident","type":"string"},{"name":"status_reason2","label":"status_reason2","type":"string"},{"name":"root_component_id_list","label":"root_component_id_list","type":"string"},{"name":"root_incident_id_list","label":"root_incident_id_list","type":"string"},{"name":"Impact_OR_Root","label":"Impact_OR_Root","type":"string"},{"name":"bOrphanedRoot","label":"bOrphanedRoot","type":"string"},{"name":"use_case","label":"use_case","type":"string"},{"name":"ClientLocale","label":"ClientLocale","type":"string"},{"name":"ServiceCI","label":"ServiceCI","type":"string"},{"name":"HPD_CI","label":"HPD_CI","type":"string"},{"name":"ServiceCI_ReconID","label":"ServiceCI_ReconID","type":"string"},{"name":"HPD_CI_ReconID","label":"HPD_CI_ReconID","type":"string"},{"name":"z1D_CI_FormName","label":"z1D_CI_FormName","type":"string"},{"name":"Previous_ServiceCI_ReconID","label":"Previous_ServiceCI_ReconID","type":"string"},{"name":"Previous_HPD_CI_ReconID","label":"Previous_HPD_CI_ReconID","type":"string"},{"name":"z1D_SR_Instanceid","label":"z1D_SR_Instanceid","type":"string"},{"name":"Direct_Contact_Corporate_ID","label":"Direct Contact Corporate ID","type":"string"},{"name":"KMSGUID","label":"KMSGUID","type":"string"},{"name":"HPD_CI_FormName","label":"HPD_CI_FormName","type":"string"},{"name":"z1D_InterfaceAction","label":"z1D_InterfaceAction","type":"string"},{"name":"z1D_WorkInfoSubmitter","label":"z1D_WorkInfoSubmitter","type":"string"},{"name":"Direct_Contact_Login_ID","label":"Direct Contact Login ID","type":"string"},{"name":"Customer_Login_ID","label":"Customer Login ID","type":"string"},{"name":"AttachmentSourceFormName","label":"AttachmentSourceFormName","type":"string"},{"name":"AttachmentSourceGUID","label":"AttachmentSourceGUID","type":"string"},{"name":"z1D_ConfirmGroup","label":"z1D_ConfirmGroup","type":"string"},{"name":"z1D_CreatedFromBackEndSynchWI","label":"z1D_CreatedFromBackEndSynchWI","type":"string"},{"name":"InfrastructureEventType","label":"InfrastructureEventType","type":"string"},{"name":"policy_type","label":"policy_type","type":"string"},{"name":"Chat_Session_ID","label":"Chat Session ID","type":"string"},{"name":"Modified_Chat_Session_ID","label":"Modified Chat Session ID","type":"string"},{"name":"Auto_Open_Session","label":"Auto Open Session","type":"string"},{"name":"TimeOfEvent","label":"TimeOfEvent","type":"string"},{"name":"FirstWIPDate","label":"FirstWIPDate","type":"string"},{"name":"LastWIPDate","label":"LastWIPDate","type":"string"},{"name":"Broker_Vendor_Name","label":"Broker Vendor Name","type":"string"},{"name":"Description","label":"Description","type":"string"},{"name":"Company","label":"Company","type":"string"},{"name":"Country","label":"Country","type":"string"},{"name":"State_Province","label":"State Province","type":"string"},{"name":"City","label":"City","type":"string"},{"name":"Organization","label":"Organization","type":"string"},{"name":"Assigned_Support_Organization","label":"Assigned Support Organization","type":"string"},{"name":"Last_Name","label":"Last Name","type":"string"},{"name":"First_Name","label":"First Name","type":"string"},{"name":"Middle_Initial","label":"Middle Initial","type":"string"},{"name":"Contact_Client_Type","label":"Contact Client Type","type":"string"},{"name":"VIP","label":"VIP","type":"string"},{"name":"Contact_Sensitivity","label":"Contact Sensitivity","type":"string"},{"name":"Desk_Location","label":"Desk Location","type":"string"},{"name":"Mail_Station","label":"Mail Station","type":"string"},{"name":"Street","label":"Street","type":"string"},{"name":"Zip/Postal_Code","label":"Zip/Postal Code","type":"string"},{"name":"Internet_E-mail","label":"Internet E-mail","type":"string"},{"name":"Corporate_ID","label":"Corporate ID","type":"string"},{"name":"Phone_Number","label":"Phone Number","type":"string"},{"name":"z1D_Char01","label":"z1D Char01","type":"string"},{"name":"Categorization_Tier_1","label":"Categorization Tier 1","type":"string"},{"name":"Categorization_Tier_2","label":"Categorization Tier 2","type":"string"},{"name":"Categorization_Tier_3","label":"Categorization Tier 3","type":"string"},{"name":"z1D_Char02","label":"z1D Char02","type":"string"},{"name":"Site_ID","label":"Site ID","type":"string"},{"name":"z1D_Action","label":"z1D Action","type":"string"},{"name":"Assigned_Group_ID","label":"Assigned Group ID","type":"string"},{"name":"Person_ID","label":"Person ID","type":"string"},{"name":"Contact_Company","label":"Contact Company","type":"string"},{"name":"Service_Type","label":"Service Type","type":"string"},{"name":"Status_Reason","label":"Status_Reason","type":"string"},{"name":"Detailed_Decription","label":"Detailed Decription","type":"string"},{"name":"Resolution","label":"Resolution","type":"string"},{"name":"Incident_Number","label":"Incident Number","type":"string"},{"name":"Urgency","label":"Urgency","type":"string"},{"name":"Impact","label":"Impact","type":"string"},{"name":"Priority","label":"Priority","type":"string"},{"name":"Priority_Weight","label":"Priority Weight","type":"string"},{"name":"Reported_Source","label":"Reported Source","type":"string"},{"name":"Assigned_Group","label":"Assigned Group","type":"string"},{"name":"Assignee","label":"Assignee","type":"string"},{"name":"Assigned_Support_Company","label":"Assigned Support Company","type":"string"},{"name":"Assigned_Group_Shift_Name","label":"Assigned Group Shift Name","type":"string"},{"name":"Assigned_Group_Shift_ID","label":"Assigned Group Shift ID","type":"string"},{"name":"Owner_Support_Organization","label":"Owner Support Organization","type":"string"},{"name":"Number_of_Attachments","label":"Number of Attachments","type":"string"},{"name":"Vendor_Name","label":"Vendor Name","type":"string"},{"name":"Owner_Group","label":"Owner Group","type":"string"},{"name":"Owner_Support_Company","label":"Owner Support Company","type":"string"},{"name":"Owner_Group_ID","label":"Owner Group ID","type":"string"},{"name":"Reported_Date","label":"Reported Date","type":"string"},{"name":"Responded_Date","label":"Responded Date","type":"string"},{"name":"Last_Acknowledged_Date","label":"Last Acknowledged Date","type":"string"},{"name":"Last_Resolved_Date","label":"Last Resolved Date","type":"string"},{"name":"Closed_Date","label":"Closed Date","type":"string"},{"name":"Vendor_Ticket_Number","label":"Vendor Ticket Number","type":"string"},{"name":"z1D_Permission_Group_ID","label":"z1D Permission Group ID","type":"string"},{"name":"z1D_Permission_Group_List","label":"z1D Permission Group List","type":"string"},{"name":"Resolution_Category","label":"Resolution Category","type":"string"},{"name":"Direct_Contact_Internet_E-mail","label":"Direct Contact Internet E-mail","type":"string"},{"name":"Vendor_Organization","label":"Vendor Organization","type":"string"},{"name":"Vendor_Group","label":"Vendor Group","type":"string"},{"name":"Vendor_Group_ID","label":"Vendor Group ID","type":"string"},{"name":"Total_Transfers","label":"Total Transfers","type":"string"},{"name":"Resolution_Method","label":"Resolution Method","type":"string"},{"name":"Resolution_Category_Tier_2","label":"Resolution Category Tier 2","type":"string"},{"name":"Resolution_Category_Tier_3","label":"Resolution Category Tier 3","type":"string"},{"name":"Closure_Product_Category_Tier1","label":"Closure Product Category Tier1","type":"string"},{"name":"Closure_Product_Category_Tier2","label":"Closure Product Category Tier2","type":"string"},{"name":"Closure_Product_Category_Tier3","label":"Closure Product Category Tier3","type":"string"},{"name":"Closure_Product_Name","label":"Closure Product Name","type":"string"},{"name":"Closure_Product_Model/Version","label":"Closure Product Model/Version","type":"string"},{"name":"Closure_Manufacturer","label":"Closure Manufacturer","type":"string"},{"name":"Estimated_Resolution_Date","label":"Estimated Resolution Date","type":"string"},{"name":"Required_Resolution_DateTime","label":"Required Resolution DateTime","type":"string"},{"name":"Direct_Contact_Company","label":"Direct Contact Company","type":"string"},{"name":"Direct_Contact_Last_Name","label":"Direct Contact Last Name","type":"string"},{"name":"Direct_Contact_First_Name","label":"Direct Contact First Name","type":"string"},{"name":"Direct_Contact_Middle_Initial","label":"Direct Contact Middle Initial","type":"string"},{"name":"Direct_Contact_Phone_Number","label":"Direct Contact Phone Number","type":"string"},{"name":"Direct_Contact_Organization","label":"Direct Contact Organization","type":"string"},{"name":"Direct_Contact_Department","label":"Direct Contact Department","type":"string"},{"name":"Direct_Contact_Region","label":"Direct Contact Region","type":"string"},{"name":"Direct_Contact_Site_Group","label":"Direct Contact Site Group","type":"string"},{"name":"Direct_Contact_Site","label":"Direct Contact Site","type":"string"},{"name":"Direct_Contact_Person_ID","label":"Direct Contact Person ID","type":"string"},{"name":"Direct_Contact_Street","label":"Direct Contact Street","type":"string"},{"name":"Direct_Contact_Country","label":"Direct Contact Country","type":"string"},{"name":"Direct_Contact_State/Province","label":"Direct Contact State/Province","type":"string"},{"name":"Direct_Contact_City","label":"Direct Contact City","type":"string"},{"name":"Direct_Contact_Zip/Postal_Code","label":"Direct Contact Zip/Postal Code","type":"string"},{"name":"Direct_Contact_Time_Zone","label":"Direct Contact Time Zone","type":"string"},{"name":"Direct_Contact_Desk_Location","label":"Direct Contact Desk Location","type":"string"},{"name":"Direct_Contact_Mail_Station","label":"Direct Contact Mail Station","type":"string"},{"name":"Direct_Contact_Location_Details","label":"Direct Contact Location Details","type":"string"},{"name":"Direct_Contact_Site_ID","label":"Direct Contact Site ID","type":"string"},{"name":"Direct_Contact_Country_Code","label":"Direct Contact Country Code","type":"string"},{"name":"Direct_Contact_Area_Code","label":"Direct Contact Area Code","type":"string"},{"name":"Direct_Contact_Local_Number","label":"Direct Contact Local Number","type":"string"},{"name":"Direct_Contact_Extension","label":"Direct Contact Extension","type":"string"}],"type":"array.object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"853ba3d2-452d-499c-aa6a-aa7a0949276f"}}</value>
+        <variable display_value="">3333f7eb1b7304101d177669cc4bcb0a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b26bc9411b8ce0505a0ec1f61a4bcbad</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>fa6bc9411b8ce0505a0ec1f61a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <value>1fb9c4181b270810a2a9c91b1e4bcb08</value>
+        <variable display_value="">6b33b7eb1b7304101d177669cc4bcbdd</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b26bc9411b8ce0505a0ec1f61a4bcbad"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>b26bc9411b8ce0505a0ec1f61a4bcbad</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>f26bc9411b8ce0505a0ec1f61a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6333b7eb1b7304101d177669cc4bcbd8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>dynamic_hidden_input_record</field>
+        <id>b26bc9411b8ce0505a0ec1f61a4bcbad</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>326bc9411b8ce0505a0ec1f61a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6333b7eb1b7304101d177669cc4bcbd8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>object</field>
+        <id>b26bc9411b8ce0505a0ec1f61a4bcbad</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>7a6bc9411b8ce0505a0ec1f61a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6333b7eb1b7304101d177669cc4bcbd8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_fields</field>
+        <id>b26bc9411b8ce0505a0ec1f61a4bcbad</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>b66bc9411b8ce0505a0ec1f61a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6333b7eb1b7304101d177669cc4bcbd8</table>
+        <value>Last Modified Date={{13354e20-fb9e-4d2c-9328-f25a9e1302ac.Record.next_execution_timestamp}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b26bc9411b8ce0505a0ec1f61a4bcbad^sys_idNOT INf26bc9411b8ce0505a0ec1f61a4bcbae"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>query_fields</input_name>
+        <instance>b26bc9411b8ce0505a0ec1f61a4bcbad</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"Last Modified Date":{"scriptActive":false,"savedValue":"2020-04-26 10:30:00"}}</script>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>f26bc9411b8ce0505a0ec1f61a4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <order>5</order>
+        <parent_ui_id>95894f4b-7eb4-4e06-97bf-235bb9a6c1af</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>fe6bc9411b8ce0505a0ec1f61a4bcbb4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="mylocl">a6ca01411b8ce0505a0ec1f61a4bcbff</sys_scope>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <ui_id>38645159-2cde-4e1e-b37c-e69dc11bcdb6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fe6bc9411b8ce0505a0ec1f61a4bcbb4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fe6bc9411b8ce0505a0ec1f61a4bcbb4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>fa6bc9411b8ce0505a0ec1f61a4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <value>sn_bmcremedy_spoke_get_record_details</value>
+        <variable display_value="">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fe6bc9411b8ce0505a0ec1f61a4bcbb4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>fe6bc9411b8ce0505a0ec1f61a4bcbb4</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>b66bc9411b8ce0505a0ec1f61a4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>incident_number={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Incident_Number}}^request_id={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Request_ID}}^instanceid={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.InstanceId}}^status={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Status}}^submitter={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Submitter}}^department={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Department}}^site_group={{95894f4b-7eb4-4e06-97bf-235bb9a6c1af.item.Site_Group}}^coalesce_fields=incident_number</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>fe6bc9411b8ce0505a0ec1f61a4bcbb4</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>7a6bc9411b8ce0505a0ec1f61a4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fe6bc9411b8ce0505a0ec1f61a4bcbb4^sys_idNOT IN7e6bc9411b8ce0505a0ec1f61a4bcbb5"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>fields</input_name>
+        <instance>fe6bc9411b8ce0505a0ec1f61a4bcbb4</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"incident_number":{"scriptActive":false,"savedValue":""}}</script>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:12</sys_created_on>
+        <sys_id>7e6bc9411b8ce0505a0ec1f61a4bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:12</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=bd6bc9411b8ce0505a0ec1f61a4bcb46^sys_idNOT IN026bc9411b8ce0505a0ec1f61a4bcb61,126bc9411b8ce0505a0ec1f61a4bcb64,866bc9411b8ce0505a0ec1f61a4bcb5c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ce4764cd1b0ce0505a0ec1f61a4bcb2b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>92b0ac6d-25dd-441e-bfcb-5f35ba3d8caa</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:09</sys_created_on>
+        <sys_id>026bc9411b8ce0505a0ec1f61a4bcb61</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:09</sys_updated_on>
+        <ui_id>95894f4b-7eb4-4e06-97bf-235bb9a6c1af</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=026bc9411b8ce0505a0ec1f61a4bcb61"/>
+    <sys_element_mapping action="delete_multiple" query="id=026bc9411b8ce0505a0ec1f61a4bcb61"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>026bc9411b8ce0505a0ec1f61a4bcb61</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:10</sys_created_on>
+        <sys_id>c66bc9411b8ce0505a0ec1f61a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{ebd62c79-8643-41d6-820a-d84fa94b78ba.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">424764cd1b0ce0505a0ec1f61a4bcb31</block>
+        <comment/>
+        <connected_to>92b0ac6d-25dd-441e-bfcb-5f35ba3d8caa</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:10</sys_created_on>
+        <sys_id>126bc9411b8ce0505a0ec1f61a4bcb64</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:10</sys_updated_on>
+        <ui_id>8c7fdd97-1b81-4c06-aaba-663bbc4ccc8b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=126bc9411b8ce0505a0ec1f61a4bcb64"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">794764cd1b0ce0505a0ec1f61a4bcb26</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Look up Record">bd6bc9411b8ce0505a0ec1f61a4bcb46</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:09</sys_created_on>
+        <sys_id>866bc9411b8ce0505a0ec1f61a4bcb5c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:09</sys_updated_on>
+        <ui_id>92b0ac6d-25dd-441e-bfcb-5f35ba3d8caa</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=866bc9411b8ce0505a0ec1f61a4bcb5c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>866bc9411b8ce0505a0ec1f61a4bcb5c</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:09</sys_created_on>
+        <sys_id>026bc9411b8ce0505a0ec1f61a4bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:09</sys_updated_on>
+        <value>Status is Success</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=866bc9411b8ce0505a0ec1f61a4bcb5c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>866bc9411b8ce0505a0ec1f61a4bcb5c</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:09</sys_created_on>
+        <sys_id>8e6bc9411b8ce0505a0ec1f61a4bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:09</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ebd62c79-8643-41d6-820a-d84fa94b78ba.status}}=Success</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>866bc9411b8ce0505a0ec1f61a4bcb5c</id>
+        <sys_created_by>chakradhar.jn@snc</sys_created_by>
+        <sys_created_on>2020-10-22 11:24:09</sys_created_on>
+        <sys_id>c66bc9411b8ce0505a0ec1f61a4bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chakradhar.jn@snc</sys_updated_by>
+        <sys_updated_on>2020-10-22 11:24:09</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+</record_update>
